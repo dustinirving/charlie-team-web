@@ -47,7 +47,7 @@ export default function Application() {
       </li> */}
       <Stepper>
         {steps.map(({ isActive, isCompleted }, index) => (
-          <Step isActive={isActive} isCompleted={isCompleted}>
+          <Step isActive={isActive} isCompleted={isCompleted} key={index}>
             {index}
           </Step>
         ))}

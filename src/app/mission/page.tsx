@@ -1,7 +1,7 @@
 import Title from '@/components/Title';
 import Container from '@/components/Container';
 import Paragraph from '@/components/Paragraph';
-import Header from '@/components/Header';
+// import Header from '@/components/Header';
 
 export default function Mission() {
   return (

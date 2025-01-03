@@ -2,17 +2,17 @@
 
 import {
   Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
+  // DisclosureButton,
+  // DisclosurePanel,
+  // Menu,
+  // MenuButton,
+  // MenuItem,
+  // MenuItems,
 } from '@headlessui/react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
-
+import { usePathname } from 'next/navigation';
+import classNames from 'classnames';
 const navigation = [
   { name: 'Mission', href: '/mission' },
   { name: 'Docuseries', href: '/docuseries' },
@@ -23,9 +23,9 @@ const navigation = [
   // { name: 'Donate', href: '/donate' },
 ];
 
-function classNames(...classes: any) {
-  return classes.filter(Boolean).join(' ');
-}
+// function classNames(...classes: any) {
+//   return classes.filter(Boolean).join(' ');
+// }
 
 export default function Navbar() {
   const pathname = usePathname();

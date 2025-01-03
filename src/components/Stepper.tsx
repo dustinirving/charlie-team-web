@@ -8,14 +8,14 @@ export default function Step({
   isActive = false,
   isCompleted = true,
   children,
-  size = 40,
-  backgroundColor = 'var(--theme-tertiary-color)',
-  foregroundColor = 'var(--theme-tertiary-foreground-color)',
-  activeBackgroundColor = 'var(--theme-active-color)',
-  activeForegroundColor = 'var(--theme-active-foreground-color)',
-  completedBackgroundColor = 'var(--theme-card-color)',
-  completedForegroundColor = 'var(--theme-card-foreground-color)',
-}: {
+}: // size = 40,
+// backgroundColor = 'var(--theme-tertiary-color)',
+// foregroundColor = 'var(--theme-tertiary-foreground-color)',
+// activeBackgroundColor = 'var(--theme-active-color)',
+// activeForegroundColor = 'var(--theme-active-foreground-color)',
+// completedBackgroundColor = 'var(--theme-card-color)',
+// completedForegroundColor = 'var(--theme-card-foreground-color)',
+{
   children: React.ReactNode;
   isActive?: boolean;
   isCompleted?: boolean;

@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
+    await req.json();
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       html: '<b>Hello world?</b>',
     };
 
-    const info = await transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ status: 201 });
   } catch (error) {
